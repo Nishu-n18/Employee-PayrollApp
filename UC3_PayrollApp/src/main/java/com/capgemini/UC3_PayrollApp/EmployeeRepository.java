@@ -1,8 +1,6 @@
-package com.capgemini.UC2_PayrollApp;
+package com.capgemini.UC3_PayrollApp;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 }
