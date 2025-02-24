@@ -1,10 +1,10 @@
-package com.capgemini.UC4_PayrollApp;
+package com.capgemini.UC5_PayrollApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Uc4PayrollAppApplicationTests {
+class Uc5PayrollAppApplicationTests {
 
 	@Test
 	void contextLoads() {

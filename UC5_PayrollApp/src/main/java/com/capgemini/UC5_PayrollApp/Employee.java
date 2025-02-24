@@ -1,15 +1,10 @@
-package com.capgemini.UC4_PayrollApp;
+package com.capgemini.UC5_PayrollApp;
 
-import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
-@Entity
-@Table(name = "employees")
 public class Employee {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank(message = "Name cannot be empty")
@@ -19,14 +14,14 @@ public class Employee {
 
     @NotBlank(message = "Email cannot be empty")
     @Email(message = "Invalid email format")
-    @Column(unique = true)
     private String email;
 
     // Default Constructor
     public Employee() {}
 
     // Parameterized Constructor
-    public Employee(String name, double salary, String email) {
+    public Employee(Long id, String name, double salary, String email) {
+        this.id = id;
         this.name = name;
         this.salary = salary;
         this.email = email;
