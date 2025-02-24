@@ -1,4 +1,4 @@
-package com.capgemini.UC1_PayrollApp;
+package com.capgemini.UC2_PayrollApp;
 
 import jakarta.persistence.*;
 
