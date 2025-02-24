@@ -1,4 +1,4 @@
-package com.capgemini.UC3_PayrollApp;
+package com.capgemini.UC4_PayrollApp;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
